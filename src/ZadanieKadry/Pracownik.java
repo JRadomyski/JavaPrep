@@ -6,7 +6,7 @@ public class Pracownik {
     private double placa;
     private char plec;
     private int dzial;
-    static int index;
+
 
     public Pracownik(String imie, String nazwisko, double placa, char plec, int dzial){
         this.imie = imie;

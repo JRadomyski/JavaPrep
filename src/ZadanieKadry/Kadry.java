@@ -1,6 +1,9 @@
 package ZadanieKadry;
 import ZadanieKadry.Pracownik;
+import java.util.Scanner;
+
 public class Kadry {
+
     private Pracownik[] pracownicy_ = new Pracownik[100];
     private int zatrudnienie_;
 
@@ -21,27 +24,36 @@ public class Kadry {
             System.out.println(pracownicy_[i]);
         }
     }
-
+    boolean alive = true;
     void dodajPracowinkaInteraktywnie(){
+        Scanner scanner = new Scanner(System.in);
+        while(alive) {
+            System.out.println("Czy chcesz dodać nowego pracownika?: Jeżeli tak to napisz TAK, jeżeli nie to napisz NIE");
+            String command = scanner.next();
+            if(command.equals("NIE")){
+                alive = false;
+                pokazZatrudnionych();
+            }else if(command.equals("TAK")){
+                System.out.println("Podaj imie: ");
+                String interaktywneImie = scanner.next();
+                System.out.println("Podaj Naziwsko: ");
+                String interaktywneNaziwsko = scanner.next();
+                System.out.println("Podaj Place: ");
+                double interaktywnaPlaca = scanner.nextDouble();
+                System.out.println("Podaj plec: ");
+                char interaktywnaPlec = scanner.next().charAt(0);
+                System.out.println("Podaj dzial: ");
+                int interaktywnyDzial = scanner.nextInt();
+                Pracownik nowyInteraktywnie = new Pracownik(interaktywneImie, interaktywneNaziwsko,interaktywnaPlaca, interaktywnaPlec, interaktywnyDzial);
+                dodajPracownika(nowyInteraktywnie);
+            }else{
+                System.out.println("Zle wprowadzone dane");
+                alive = false;
+            }
 
+        }
     }
-
-
-
 
 }
 
 
-
-//        if (i < 100) {
-//            if (i < pracownicy_.length) {
-//                pracownicy_[i] = X;
-//            } else {
-//                Pracownik[] pracownicy_2 = new Pracownik[pracownicy_.length + 1];
-//                for (int j = 0; j < pracownicy_.length; j++) {
-//                    pracownicy_2[j] = pracownicy_[j];
-//                }
-//                pracownicy_2[i] = X;
-//                pracownicy_ = pracownicy_2;
-//            }
-//        }

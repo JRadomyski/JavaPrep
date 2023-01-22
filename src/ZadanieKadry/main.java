@@ -10,6 +10,8 @@ public class main {
         Kadry kadry = new Kadry();
         kadry.dodajPracownika(pracownik1);
         kadry.pokazZatrudnionych();
+        kadry.dodajPracowinkaInteraktywnie();
+
 
 
     }
