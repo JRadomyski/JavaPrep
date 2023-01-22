@@ -1,17 +1,28 @@
 package ZadanieKadry;
+import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
-        Pracownik pracownik1 = new Pracownik("Maciej", "Chomicz", 399.33, 'M', 1);
-        Pracownik pracownik2 = new Pracownik("Kuba", "Rad", 299.33, 'M', 2);
-        Pracownik pracownik3 = new Pracownik("Aleks", "Mad", 449.33, 'M', 3);
-
-
+        Scanner scanner = new Scanner(System.in);
         Kadry kadry = new Kadry();
-        kadry.dodajPracownika(pracownik1);
-        kadry.pokazZatrudnionych();
-        kadry.dodajPracowinkaInteraktywnie();
 
+        boolean alive = true;
+        while(alive) {
+            System.out.println("add - dodaje nowego pracownika\nshow - pokazuje zatrudnionych pracownikow\nexit - wychodzi z programu");
+            String command = scanner.next();
+            if(command.equals("exit")){
+                System.out.println("Shutting down....");
+                alive = false;
+            }else if(command.equals("add")){
+                kadry.dodajPracowinkaInteraktywnie();
+            } else if (command.equals("show")) {
+                kadry.pokazZatrudnionych();
+            } else {
+                System.out.println("Zle wprowadzone dane");
+                alive = false;
+            }
+
+        }
 
 
     }
