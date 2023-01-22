@@ -7,7 +7,7 @@ public class Kadry {
     public Kadry(){
         zatrudnienie_ = -1;
     }
-    int i = 0;
+
     void dodajPracownika(Pracownik nowy) {
         if(zatrudnienie_==100){
             System.out.println("Stos jest pelny!");
@@ -17,9 +17,13 @@ public class Kadry {
     }
 
     void pokazZatrudnionych(){
-        for(int i = 0; i < pracownicy_.length; i++){
+        for(int i = 0; i == zatrudnienie_; i++){
             System.out.println(pracownicy_[i]);
         }
+    }
+
+    void dodajPracowinkaInteraktywnie(){
+
     }
 
 

@@ -1,4 +1,4 @@
-package Zadanie2;
+package Liczenie;
 
 public class TablicaObliczenia {
     private int[] tablica;

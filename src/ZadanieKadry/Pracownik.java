@@ -19,7 +19,7 @@ public class Pracownik {
 
     @Override
     public String toString() {
-        return super.toString() + " \timie "+ imie + " nazwisko " + nazwisko + " placa "+ placa + " plec "+ plec + " dzial "+ dzial;
+        return super.toString() + " \tImie "+ imie + " | nazwisko " + nazwisko + " | placa "+ placa + " | plec "+ plec + " | dzial "+ dzial;
     }
 
     boolean czyPracujeWDziale(int numer_dzialu){
@@ -30,8 +30,8 @@ public class Pracownik {
         return czy;
     }
 
-    public void iloscPracownikow(){
-        System.out.println("Ilosc pracownikow: " + index);
-    }
+//    public void iloscPracownikow(){
+//        System.out.println("Ilosc pracownikow: " + index);
+//    }
 
 }

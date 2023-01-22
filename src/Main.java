@@ -1,5 +1,5 @@
 import Zadanie1.Programista;
-import Zadanie2.TablicaObliczenia;
+import Liczenie.TablicaObliczenia;
 import Zadanie3.*;
 public class Main {
     public static void main(String[] args) {
