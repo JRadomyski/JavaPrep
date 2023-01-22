@@ -9,6 +9,10 @@ public class main {
         System.out.println(pracownik2.toString());
         System.out.println(pracownik3.toString());
 
+        Kadry kadry = new Kadry();
+        kadry.dodajPracownika(pracownik1);
+        kadry.pokazZatrudnionych();
+
 
     }
 }
