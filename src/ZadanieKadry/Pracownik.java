@@ -27,4 +27,9 @@ public class Pracownik {
         return czy;
     }
 
+    public double getPlaca(){
+        return placa;
+    }
+
+
 }

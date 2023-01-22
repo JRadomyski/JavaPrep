@@ -1,11 +1,14 @@
 package ZadanieKadry;
-import ZadanieKadry.Pracownik;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Kadry {
 
-    private Pracownik[] pracownicy_ = new Pracownik[100];
-    private int zatrudnienie_;
+      Pracownik[] pracownicy_ = new Pracownik[100];
+      int zatrudnienie_;
+
 
     public Kadry(){
         zatrudnienie_ = -1;
@@ -19,7 +22,7 @@ public class Kadry {
     }
 
     void pokazZatrudnionych(){
-        for(int i = 0; i == zatrudnienie_; i++){
+        for(int i = 0; i < pracownicy_.length; i++){
             System.out.println(pracownicy_[i]);
         }
     }
@@ -38,6 +41,32 @@ public class Kadry {
         int interaktywnyDzial = scanner.nextInt();
         Pracownik nowyInteraktywnie = new Pracownik(interaktywneImie, interaktywneNaziwsko, interaktywnaPlaca, interaktywnaPlec, interaktywnyDzial);
         dodajPracownika(nowyInteraktywnie);
+    }
+    void zapiszDoPlikuTekstowego(){
+        FileOutputStream fos;
+        try {
+            fos = new FileOutputStream("zatrudnieni.txt");
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        PrintWriter pw = new PrintWriter(fos);
+        for(int i = 0; i == zatrudnienie_; i++){
+            pw.println(pracownicy_[i]);
+        }
+
+        pw.close();
+    }
+//    void importujZPlikuTekstowego(){
+//
+//    }
+
+    int sredniZarobek(){
+        int suma=0;
+        for(int i = 0; i == pracownicy_.length; i++){
+            suma += pracownicy_[i].getPlaca();
+        }
+        int srednia = suma/pracownicy_.length;
+        return srednia;
     }
 
 
