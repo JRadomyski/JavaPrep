@@ -11,29 +11,25 @@ public class main {
         kadry.dodajPracownika(pracownik1);
         kadry.dodajPracownika(pracownik2);
         kadry.dodajPracownika(pracownik3);
-        kadry.sredniZarobek();
-
-
-
+        System.out.println(kadry.sredniZarobek());
 
         boolean alive = true;
-//        while(alive) {
-//            System.out.println("add - dodaje nowego pracownika\nshow - pokazuje zatrudnionych pracownikow\nsave - zapisuje do txt\nexit - wychodzi z programu");
-//            String command = scanner.next();
-//            if(command.equals("exit")){
-//                System.out.println("Shutting down....");
-//                alive = false;
-//            }else if(command.equals("add")){
-//                kadry.dodajPracowinkaInteraktywnie();
-//            } else if (command.equals("show")) {
-//                kadry.pokazZatrudnionych();
-//            }else if (command.equals("save")) {
-//                kadry.zapiszDoPlikuTekstowego();
-//            }else {
-//                System.out.println("Zle wprowadzone dane");
-//                alive = false;
-//            }
-//
-//        }
+        while(alive) {
+            System.out.println("add - dodaje nowego pracownika\nshow - pokazuje zatrudnionych pracownikow\nsave - zapisuje do txt\nexit - wychodzi z programu");
+            String command = scanner.next();
+            if(command.equals("exit")){
+                System.out.println("Shutting down....");
+                alive = false;
+            }else if(command.equals("add")){
+                kadry.dodajPracowinkaInteraktywnie();
+            } else if (command.equals("show")) {
+                kadry.pokazZatrudnionych();
+            }else if (command.equals("save")) {
+                kadry.zapiszDoPlikuTekstowego();
+            }else {
+                System.out.println("Zle wprowadzone dane");
+                alive = false;
+            }
+        }
     }
 }

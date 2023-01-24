@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Kadry {
 
-      Pracownik[] pracownicy_ = new Pracownik[100];
+      Pracownik[] pracownicy_ = new Pracownik[3];
       int zatrudnienie_;
 
 
@@ -62,7 +62,7 @@ public class Kadry {
 
     int sredniZarobek(){
         int suma=0;
-        for(int i = 0; i == pracownicy_.length; i++){
+        for(int i = 0; i < pracownicy_.length; i++){
             suma += pracownicy_[i].getPlaca();
         }
         int srednia = suma/pracownicy_.length;
