@@ -3,11 +3,11 @@ package metody;
 public class ThePowerMethod {
     public static void main(String[] args) {
         power(2,3);
-        System.out.println(sumUp(3,4));
+        System.out.println(summing.sumUp(3,4));
         repeat(3,"PPJ");
         isPrime(6);
         isEmail("zkaubra@gmail.com");
-        isPhone("503929656");
+        isPhone("123444555");
         System.out.println(isPrivate("zkaubra@gmail.com", "503929656"));
 
 
@@ -17,10 +17,7 @@ public class ThePowerMethod {
         int c = (int)Math.pow(a,b);
         System.out.println(c);
     }
-    public static int sumUp(int x, int y){
-        int sum = x + y;
-        return sum;
-    }
+
     public static void repeat(int amount, String text){
         for(int i = 1; i <= amount; i++){
             System.out.println(text);
