@@ -1,4 +1,4 @@
-package ZadanieKadry;
+package zadanieKadry;
 import java.util.Scanner;
 
 public class main {

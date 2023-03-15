@@ -1,4 +1,4 @@
-package santaclaus;
+package santaClaus;
 
 public abstract class Osoba {
     String imie;

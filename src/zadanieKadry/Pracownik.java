@@ -1,5 +1,5 @@
-package ZadanieKadry;
-import java.util.Scanner.*;
+package zadanieKadry;
+
 public class Pracownik {
     private String imie;
     private String nazwisko;

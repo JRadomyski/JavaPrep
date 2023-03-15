@@ -1,4 +1,4 @@
-package streamy;
+package streams;
 
 import java.io.*;
 import java.util.Scanner;

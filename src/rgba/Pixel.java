@@ -1,4 +1,4 @@
-package RGBA;
+package rgba;
 
 public class Pixel {
     class ZerosException extends Exception{

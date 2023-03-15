@@ -1,4 +1,4 @@
-package reading;
+package codeReading;
 
 import java.util.Arrays;
 

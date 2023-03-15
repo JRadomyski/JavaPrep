@@ -1,14 +1,12 @@
-package ZadanieKadry;
+package zadanieKadry;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Kadry {
-
       Pracownik[] pracownicy_ = new Pracownik[3];
       int zatrudnienie_;
-
 
     public Kadry(){
         zatrudnienie_ = -1;
@@ -26,7 +24,6 @@ public class Kadry {
             System.out.println(pracownicy_[i]);
         }
     }
-
     void dodajPracowinkaInteraktywnie() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj imie: ");
@@ -56,9 +53,6 @@ public class Kadry {
 
         pw.close();
     }
-//    void importujZPlikuTekstowego(){
-//
-//    }
 
     int sredniZarobek(){
         int suma=0;

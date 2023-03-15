@@ -1,4 +1,4 @@
-package liczenie;
+package calculating;
 
 public class TablicaObliczenia {
     private int[] tablica;

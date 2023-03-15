@@ -11,12 +11,6 @@ public class task1 {
             tab1[i] = tab1[tab1.length - i - 1];
             tab1[tab1.length - i - 1] = temp;
         }
-
-//        for(int i = tab1.length-1; i >= 0; i--){
-//            System.out.println(tab1[i]);
-//        }
-//
-
         for(String i : tab1){
             System.out.println(i);
         }

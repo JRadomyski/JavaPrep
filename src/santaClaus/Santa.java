@@ -1,4 +1,4 @@
-package santaclaus;
+package santaClaus;
 
 public class Santa
         extends Osoba{
