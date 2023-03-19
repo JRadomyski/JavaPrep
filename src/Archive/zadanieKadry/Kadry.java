@@ -1,4 +1,4 @@
-package zadanieKadry;
+package Archive.zadanieKadry;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;

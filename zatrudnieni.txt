@@ -1,1 +1,0 @@
-zadanieKadry.Pracownik@19469ea2 	Imie Kuba | nazwisko Rad | placa 22.0 | plec M | dzial 1

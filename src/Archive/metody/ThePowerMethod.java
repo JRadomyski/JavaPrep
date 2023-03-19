@@ -1,4 +1,4 @@
-package metody;
+package Archive.metody;
 
 public class ThePowerMethod {
     public static void main(String[] args) {

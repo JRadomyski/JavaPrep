@@ -1,4 +1,4 @@
-package kalendarz;
+package Archive.kalendarz;
 
 public class kalendarz_zajecia {
     public static void main(String[] args) {
