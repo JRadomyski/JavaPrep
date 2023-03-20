@@ -1,4 +1,4 @@
-package Swing.FIRST_GUI;
+package Swing.firstGUI;
 
 import javax.swing.*;
 import java.awt.*;
