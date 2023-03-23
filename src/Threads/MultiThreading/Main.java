@@ -2,12 +2,14 @@ package Threads.MultiThreading;
 
 public class Main {
     public static void main(String[] args) {
-        for(int i =0; i < 5; i++){
-            threading myThing = new threading(i);
-            myThing.start();
-        }
+        MyThread thread1 = new MyThread();
 
 
+        MyRunnable runnable1 = new MyRunnable();
+        Thread thread2 = new Thread(runnable1);
 
+
+        thread1.start();
+        thread2.start();
     }
 }
