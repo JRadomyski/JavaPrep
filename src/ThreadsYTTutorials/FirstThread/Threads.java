@@ -1,6 +1,4 @@
-package Threads.FirstThread;
-
-import Threads.FirstThread.MyThread;
+package ThreadsYTTutorials.FirstThread;
 
 public class Threads {
     public static void main(String[] args) {

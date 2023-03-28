@@ -1,4 +1,4 @@
-package Threads.MultiThreading;
+package ThreadsYTTutorials.MultiThreading;
 
 public class Main {
     public static void main(String[] args) {

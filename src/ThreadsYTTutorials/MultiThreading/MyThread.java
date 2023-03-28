@@ -1,9 +1,10 @@
-package Threads.MultiThreading;
+package ThreadsYTTutorials.MultiThreading;
 
-public class MyRunnable implements Runnable{
+public class MyThread extends Thread{
+
 
     @Override
-    public void run() {
+    public void run(){
         for(int i = 10; i > 0; i--){
             System.out.println("Thread #1: " + i);
             try {
@@ -13,6 +14,5 @@ public class MyRunnable implements Runnable{
             }
         }
         System.out.println("Thread #1 is finished");
-
     }
 }
