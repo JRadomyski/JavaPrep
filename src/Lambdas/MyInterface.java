@@ -7,6 +7,6 @@ public interface MyInterface {
         public void message() {
             System.out.println("helol");
         }
-    }
+    };
 
 }
