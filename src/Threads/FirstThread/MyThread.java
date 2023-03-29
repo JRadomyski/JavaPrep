@@ -1,4 +1,4 @@
-package ThreadsYTTutorials.FirstThread;
+package Threads.FirstThread;
 
 public class MyThread extends Thread{
     @Override
