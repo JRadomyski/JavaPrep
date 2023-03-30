@@ -1,4 +1,4 @@
-package Basics;
+package PPJ;
 
 public class LAB03 {
     public static void main(String[] args) {
