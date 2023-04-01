@@ -1,4 +1,4 @@
-package Threads.MultiThreading;
+package Archive.Threads.MultiThreading;
 
 public class MyThread extends Thread{
 

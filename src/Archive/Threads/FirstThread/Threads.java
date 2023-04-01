@@ -1,4 +1,4 @@
-package Threads.FirstThread;
+package Archive.Threads.FirstThread;
 
 public class Threads {
     public static void main(String[] args) {

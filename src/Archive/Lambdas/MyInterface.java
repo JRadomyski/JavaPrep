@@ -1,4 +1,4 @@
-package Lambdas;
+package Archive.Lambdas;
 
 public interface MyInterface {
     public void message();

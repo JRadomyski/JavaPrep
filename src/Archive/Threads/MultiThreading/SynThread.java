@@ -1,4 +1,4 @@
-package Threads.MultiThreading;
+package Archive.Threads.MultiThreading;
 
 public class SynThread extends Thread{
     public static int value = 4000000;

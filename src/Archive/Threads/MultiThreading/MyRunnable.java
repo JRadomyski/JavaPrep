@@ -1,4 +1,4 @@
-package Threads.MultiThreading;
+package Archive.Threads.MultiThreading;
 
 public class MyRunnable implements Runnable{
     @Override
