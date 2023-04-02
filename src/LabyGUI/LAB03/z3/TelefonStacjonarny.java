@@ -10,8 +10,4 @@ public class TelefonStacjonarny extends Urzadzenie implements Dzowni{
         System.out.println("Dzwonienie z Telefonu Stacjonarnego....");
     }
 
-    @Override
-    public String funkcjonalnosc() {
-        return "Lacze z innym telefonem....";
-    }
 }

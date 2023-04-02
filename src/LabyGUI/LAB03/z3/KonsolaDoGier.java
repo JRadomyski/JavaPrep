@@ -1,27 +1,26 @@
 package LabyGUI.LAB03.z3;
 
-public class KonsolaDoGier extends Urzadzenie implements WyswietlaObraz, Gra {
+public class KonsolaDoGier extends Urzadzenie implements GraWGre, Surfuje {
     private boolean maPolaczenieInternetowe;
 
-    public KonsolaDoGier(String producent, double cena, boolean maPolaczenieInternetowe) {
-        super();
+    public KonsolaDoGier(String producent, int cena, boolean maPolaczenieInternetowe) {
+        super(producent, cena);
         this.maPolaczenieInternetowe = maPolaczenieInternetowe;
     }
 
     @Override
-    public void wyswietlObraz(String adres) {
-        System.out.println("Wyświetlam obraz z adresu: " + adres);
-    }
-
-    @Override
-    public void graj() {
+    public void gra() {
         System.out.println("Gram w grę");
     }
 
-    public boolean isMaPolaczenieInternetowe() {
-        return maPolaczenieInternetowe;
-    }
 
-    public void setMaPolaczenieInternetowe(boolean maPolaczenieInternetowe) {
-        this.maPolaczenieInternetowe = maPolaczenieInternetowe;
+    @Override
+    public void surfuje() {
+        System.out.println("Nie surfuje bo nie mam polaczenie z Internetem!");
     }
+    public void surfuje(boolean maPolaczenieInternetowe){
+        if(maPolaczenieInternetowe){
+            System.out.println("Lacze sie z Internetem");
+        }
+    }
+}

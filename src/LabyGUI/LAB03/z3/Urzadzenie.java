@@ -9,14 +9,13 @@ public abstract class Urzadzenie {
         this.cena = cena;
     }
 
-    public abstract String funkcjonalnosc();
+
 
     @Override
     public String toString() {
         return "Urzadzenie: " + this.getClass().getSimpleName()
                 + " producent: " + producent +
-                " cena:" + cena
-                + " funkcjonalnosc: " + funkcjonalnosc();
+                " cena:" + cena;
     }
     public double getCena(){
         return cena;
