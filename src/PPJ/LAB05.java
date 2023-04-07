@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class LAB05 {
     public static void main(String[] args) {
-        task02();
-        task03();
-        task04();
-        task05();
-        task06();
-        task07();
+//        task02();
+//        task03();
+//        task04();
+//        task05();
+//        task06();
+//        task07();
+        task08();
     }
 
     static void task02(){
@@ -75,7 +76,12 @@ public class LAB05 {
     }
 
     static void task08(){
+        boolean run = true;
         int kierunek = 0;
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        while(run){
+
+        }
     }
+
 }
