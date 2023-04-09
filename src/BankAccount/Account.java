@@ -33,10 +33,5 @@ public class Account {
         return balance;
     }
 
-    class AccountNotExists extends Exception {
-    }
-    class NotAllowedOperation extends Exception{
-
-    }
 
 }

@@ -1,30 +1,78 @@
 package BankAccount;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Bank {
+    private List<Account> accounts;
     public Bank() {
+        accounts =  new ArrayList<>() ;
     }
 
     public long createAccount() {
-        return 0;
+        Account account = new Account();
+        accounts.add(account);
+        return account.getAccountNumber();
     }
 
-    public long withdraw(long accountNumber, long cash) {
-        return 0;
+    private Account findAccount(long accountNumber) throws AccountNotExists {
+        for(Account account: accounts) {
+            if(account.getAccountNumber() == accountNumber) {
+                return account;
+            }
+        }
+        throw new AccountNotExists();
     }
 
-    public long deposit(long accountNumber, long cash) {
-        return 0;
+    public long withdraw(long accountNumber, long cash) throws AccountNotExists, OperationNotAllowed{
+        Account account = findAccount(accountNumber);
+        boolean isReduced = account.reduceBalance(cash);
+
+        if(isReduced) {
+            return account.getAccountBalance();
+        }
+
+        throw new OperationNotAllowed();
+    }
+
+    public long deposit(long accountNumber, long cash) throws AccountNotExists, OperationNotAllowed {
+        Account account = findAccount(accountNumber);
+        boolean isIncrease = account.increaseBalance(cash);
+
+        if(isIncrease) {
+            return account.getAccountBalance();
+        }
+
+        throw new OperationNotAllowed();
     }
 
     public boolean transfer(long sourceNumber, long destinationNumber, long cash) {
+
+        try {
+            withdraw(sourceNumber, cash);
+            deposit(destinationNumber, cash);
+
+        } catch (AccountNotExists | OperationNotAllowed e) {
+            return false;
+        }
+
         return true;
     }
 
-    public long accountBalance(long accountNumber) {
-        return 0;
+
+    public long accountBalance(long accountNumber) throws AccountNotExists {
+        Account account = findAccount(accountNumber);
+        return account.getAccountBalance();
     }
 
     public long bankBalance() {
-        return 0;
+        long sumBalance = 0;
+
+        for(Account account: accounts) {
+            sumBalance += account.getAccountBalance();
+        }
+
+        return sumBalance;
     }
+
 }
