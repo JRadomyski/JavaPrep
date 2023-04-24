@@ -1,4 +1,4 @@
-package Archive.zadanieKadry;
+package KadryProjekt;
 
 public class Pracownik {
     private String imie;

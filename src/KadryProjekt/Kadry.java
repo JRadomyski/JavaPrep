@@ -1,4 +1,4 @@
-package Archive.zadanieKadry;
+package KadryProjekt;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
@@ -24,6 +24,7 @@ public class Kadry {
             System.out.println(pracownicy_[i]);
         }
     }
+
     void dodajPracowinkaInteraktywnie() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj imie: ");
@@ -39,6 +40,7 @@ public class Kadry {
         Pracownik nowyInteraktywnie = new Pracownik(interaktywneImie, interaktywneNaziwsko, interaktywnaPlaca, interaktywnaPlec, interaktywnyDzial);
         dodajPracownika(nowyInteraktywnie);
     }
+
     void zapiszDoPlikuTekstowego(){
         FileOutputStream fos;
         try {
@@ -50,7 +52,6 @@ public class Kadry {
         for(int i = 0; i == zatrudnienie_; i++){
             pw.println(pracownicy_[i]);
         }
-
         pw.close();
     }
 
@@ -62,8 +63,6 @@ public class Kadry {
         int srednia = suma/pracownicy_.length;
         return srednia;
     }
-
-
 
 }
 

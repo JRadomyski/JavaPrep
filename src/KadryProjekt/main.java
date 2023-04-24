@@ -1,4 +1,4 @@
-package Archive.zadanieKadry;
+package KadryProjekt;
 import java.util.Scanner;
 
 public class main {
