@@ -9,7 +9,7 @@ This project was generated to help me to learn Java for exams and complex projec
 + JavaFX,
 + core basics.
 
-# Projects:
+## Projects:
 
 + ### Bitwise Calculator - calc app using bitwise operators only
 + ### Bank Account - console project to simulate ATM
