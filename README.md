@@ -31,6 +31,10 @@ A human resources management application that enables user management.
 
 A simple yet effective clock application created using Java's Swing library and multi-threading capabilities.
 
+### Swing Calculator
+
+Beginner programmer must have project :)
+
 ## 📥 Getting Started
 
 To get started with this repository:
