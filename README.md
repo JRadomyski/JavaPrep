@@ -10,6 +10,7 @@ This repository is a compendium of several key Java concepts and applications, i
 2. **Swing** - Projects demonstrating the use of Java's built-in graphical user interface (GUI) toolkit.
 3. **JavaFX** - Applications showcasing another one of Java's GUI toolkits, which is often seen as a successor to Swing.
 4. **Java Core Basics** - Foundational knowledge of Java, including syntax, data structures, and standard libraries.
+5. **ToolBox Utility Class** - A utility class with various helper methods for tasks such as array manipulation, sorting, random number generation, and encryption.
 
 ## 🚀 Projects
 
@@ -34,6 +35,17 @@ A simple yet effective clock application created using Java's Swing library and 
 ### Swing Calculator
 
 Beginner programmer must have project :)
+
+### ToolBox Class
+
+An utility class, `ToolBox`, that provides several utility functions for:
+
+- Converting arrays to strings with `arrToString` methods.
+- Displaying array contents with `showArr` methods.
+- Sorting arrays in ascending or descending order with `sortArrAscending` and `sortArrDescending` methods.
+- Generating random numbers with `getIntRandomNumber` method.
+- Generating sequential integer arrays with `getInt1DArr` and `getInt2DArr` methods.
+- Encrypting and decrypting strings with `encrypt`, `decrypt`, `encryptCaesar` and `decryptCaesar` methods.
 
 ## 📥 Getting Started
 
