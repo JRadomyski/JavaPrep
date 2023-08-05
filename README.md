@@ -23,14 +23,9 @@ A unique calculator app that exclusively utilizes bitwise operations for its cal
 
 This console-based project replicates the functionality of an Automated Teller Machine (ATM), providing a textual interface for bank transactions.
 
-
 ### Swing Clock
 
 A simple yet effective clock application created using Java's Swing library and multi-threading capabilities.
-
-### Swing Calculator
-
-Beginner programmer must have project :)
 
 ### ToolBox Class
 
