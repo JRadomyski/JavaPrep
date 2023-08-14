@@ -15,7 +15,7 @@ public class Ship {
     public int getTotalWeight() {
         int totalWeight = 0;
         for (Container container : containers) {
-            totalWeight += container.getMasa();
+            totalWeight += container.getWeight();
         }
         return totalWeight;
     }
