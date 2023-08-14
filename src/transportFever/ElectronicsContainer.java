@@ -3,7 +3,7 @@ package transportFever;
 public class ElectronicsContainer extends Container{
 
     public ElectronicsContainer(int id, int weight) {
-        super(id, weight, "Elektronika");
+        super(id, weight, "Electronics");
     }
 
     public boolean requiresPower(){
@@ -11,6 +11,6 @@ public class ElectronicsContainer extends Container{
     }
 
     public String getSpecificRequirements(){
-        return "Standardowy kontener";
+        return "Standard";
     }
 }
