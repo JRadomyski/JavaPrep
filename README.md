@@ -58,7 +58,7 @@ A single `int` variable can encode up to 6 letters.
 2. **Default Decoding**: By default, the program decodes the message for the number `278905354`, but you can adjust this number in the main program.
 3. **Custom Encoding**: To encode your own message, change the value of the `customMessage` variable in the main program and run it again.
 
-## Example
+##### Example
 For the integer `278905354`, the decoded message is `HI_PPJ`.
 
 ## 📥 Getting Started
