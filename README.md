@@ -1,7 +1,3 @@
-# 📚 Java Preparation
-
-Java Preparation is a personal learning project designed to aid my understanding and competency in Java, specifically in preparation for exams and more complex projects.
-
 ## 🎯 What's Inside
 
 This repository is a compendium of several key Java concepts and applications, including:
