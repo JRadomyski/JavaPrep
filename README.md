@@ -21,7 +21,7 @@ A unique calculator app that exclusively utilizes bitwise operations for its cal
 
 ### Transport Fever
 
-This console-based project helps managing ship-containers.
+This console-based project helps to manage ship-containers.
 
 ### Swing Clock
 
@@ -37,29 +37,6 @@ An utility class, `ToolBox`, that provides several utility functions for:
 - Generating random numbers with `getIntRandomNumber` method.
 - Generating sequential integer arrays with `getInt1DArr` and `getInt2DArr` methods.
 - Encrypting and decrypting strings with `encrypt`, `decrypt`, `encryptCaesar` and `decryptCaesar` methods.
-
-### Integer Message Decoder
-
-#### Overview
-This program allows encoding and decoding of messages embedded in an integer value. It assumes the English alphabet consists of 26 letters, meaning we need at least 5 bits (2^5 = 32) to encode every letter.
-
-#### Encoding Assumptions
-- `A` = 1
-- `B` = 2
-- ...
-- `Z` = 26
-- `_` = 31
-
-A single `int` variable can encode up to 6 letters.
-
-#### Usage
-
-1. **Run the Program**: Simply start the program.
-2. **Default Decoding**: By default, the program decodes the message for the number `278905354`, but you can adjust this number in the main program.
-3. **Custom Encoding**: To encode your own message, change the value of the `customMessage` variable in the main program and run it again.
-
-##### Example
-For the integer `278905354`, the decoded message is `HI_PPJ`.
 
 ## 📥 Getting Started
 
