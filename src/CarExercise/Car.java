@@ -79,6 +79,9 @@ public class Car {
                 ", model='" + model + '\'' +
                 ", year=" + year +
                 ", color='" + color + '\'' +
+                ", mileage=" + mileage +
+                ", maxSpeed=" + maxSpeed +
+                ", range=" + range +
                 '}';
     }
 }
