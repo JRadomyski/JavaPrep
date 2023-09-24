@@ -32,6 +32,11 @@ public class Car {
         range -= distance;
     }
 
+    public void tank() {
+        System.out.println("Jak to działa ");
+    }
+
+
     public String getMake() {
         return make;
     }
