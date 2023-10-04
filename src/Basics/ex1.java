@@ -10,8 +10,6 @@ a ile kobiet, przyjmując że imiona kobiece kończą się na literę “a”.
  */
 
 
-import codeReading.EGZ;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
