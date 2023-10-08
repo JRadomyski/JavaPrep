@@ -1,4 +1,4 @@
-package Basics;
+package Basics.exercises;
 
 /*
 Stwórz program, w którym:
@@ -8,7 +8,6 @@ Pobierzesz te imiona i zapiszesz je do ArrayListy.
 Wyświetlisz informację, ile jest na liście mężczyzn,
 a ile kobiet, przyjmując że imiona kobiece kończą się na literę “a”.
  */
-
 
 import java.util.ArrayList;
 import java.util.Scanner;

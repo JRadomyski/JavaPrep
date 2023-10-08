@@ -1,4 +1,4 @@
-package Basics;
+package Basics.exercises;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -9,11 +9,6 @@ public class ex2 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Wprowadz zdanie: ");
         text = scanner.nextLine();
-
         HashMap<Integer, Character> counter = new HashMap<>();
-
-
-
-
     }
 }

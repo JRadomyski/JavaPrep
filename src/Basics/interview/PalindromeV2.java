@@ -1,4 +1,4 @@
-package Basics;
+package Basics.interview;
 
 public class PalindromeV2 {
     public static void main(String[] args) {
@@ -13,8 +13,5 @@ public class PalindromeV2 {
         System.out.println(letters);
         System.out.println(reversedLetters);
         System.out.println(reversedLetters);
-
-
-
     }
 }
