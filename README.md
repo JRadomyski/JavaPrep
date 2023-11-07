@@ -4,7 +4,7 @@ This repository is a compendium of several key Java concepts and applications, i
 
 1. **Object-Oriented Programming (OOP)** - Fundamental OOP concepts and patterns are explored here.
 2. **Swing** - Projects demonstrating the use of Java's built-in graphical user interface (GUI) toolkit.
-3. **Java Core Basics** - Foundational knowledge of Java, including syntax, data structures, and standard libraries.
+3. **Java Core leetcode** - Foundational knowledge of Java, including syntax, data structures, and standard libraries.
 4. **ToolBox Utility Class** - A utility class with various helper methods for tasks such as array manipulation, sorting, random number generation, and encryption.
 
 ## 🚀 Projects

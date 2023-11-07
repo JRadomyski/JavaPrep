@@ -1,17 +1,18 @@
-package Basics.drawingOsXs;
+package Random.drawingOsXs;
 
-public class Task3 {
+public class Task1 {
     public static void main(String[] args) {
-        int n = 4;
-        int size = n * 2 - 1;
 
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size; j++) {
+        int n = 6;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i+1; j++) {
                 char mark;
-                if (i % 2 == 0 && j % 2 == 0)
+                if (i == 0 || i == n - 1 || j == 0 || j == i)
                     mark = 'X';
                 else
                     mark = '0';
+
                 System.out.print(mark + "\t");
             }
             System.out.println();

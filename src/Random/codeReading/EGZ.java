@@ -1,4 +1,4 @@
-package Basics.codeReading;
+package Random.codeReading;
 
 import java.util.Arrays;
 

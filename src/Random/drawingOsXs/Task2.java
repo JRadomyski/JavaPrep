@@ -1,4 +1,4 @@
-package Basics.drawingOsXs;
+package Random.drawingOsXs;
 
 public class Task2 {
     public static void main(String[] args) {

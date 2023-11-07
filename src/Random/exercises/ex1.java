@@ -1,4 +1,4 @@
-package Basics.exercises;
+package Random.exercises;
 
 /*
 Stwórz program, w którym:

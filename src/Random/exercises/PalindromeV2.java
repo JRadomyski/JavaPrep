@@ -1,4 +1,4 @@
-package Basics.interview;
+package Random.exercises;
 
 public class PalindromeV2 {
     public static void main(String[] args) {

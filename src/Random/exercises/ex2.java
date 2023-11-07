@@ -1,4 +1,4 @@
-package Basics.exercises;
+package Random.exercises;
 
 import java.util.HashMap;
 import java.util.Map;
